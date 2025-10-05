@@ -21,6 +21,9 @@ export const metadata = {
     description: 'Juego interactivo de preguntas anónimas',
     type: 'website',
   },
+  verification: {
+    google: '2OG0s1XAsC_7JK8VTryb3GLyxZzB9IsKYSFMwsOsqWo',
+  },
 };
 
 export default function RootLayout({ children }) {
