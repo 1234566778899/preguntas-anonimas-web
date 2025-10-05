@@ -19,7 +19,7 @@ import { useForm } from 'react-hook-form';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { MENSAJES } from '@/utils/constants';
-import { generarCodigoSala } from '@/utils/helpers';
+import { generarCodigoSala, validarCodigoSala } from '@/utils/helpers';
 
 export default function HomePage() {
   const router = useRouter();
