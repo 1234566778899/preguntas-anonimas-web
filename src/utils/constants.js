@@ -48,7 +48,7 @@ export const MENSAJES = {
 
 export const APP_CONFIG = {
   NOMBRE_APP: process.env.NEXT_PUBLIC_APP_NAME || 'Preguntas Anónimas',
-  SOCKET_URL: process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:4000',
+  SOCKET_URL: process.env.NEXT_PUBLIC_SOCKET_URL || 'https://preguntas-anonimas-server-production.up.railway.app',
   MAX_USUARIOS: 20,
   TIEMPO_ESPERA: 3000,
 };
