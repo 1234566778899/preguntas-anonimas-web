@@ -60,35 +60,6 @@ export const EnviarPregunta = ({ onEnviarPregunta }) => {
             <CardContent sx={{ p: 3 }}>
                 <form onSubmit={handleSubmit(handleEnviar)}>
                     <Stack spacing={3}>
-                        {/* Información */}
-                        <Paper
-                            elevation={0}
-                            sx={{
-                                p: 2,
-                                bgcolor: '#fef3c7',
-                                borderRadius: 2,
-                                border: '1px solid #fde68a',
-                            }}
-                        >
-                            <Typography variant="body2" color="warning.dark">
-                                💭 <strong>Tips para buenas preguntas:</strong>
-                            </Typography>
-                            <Typography
-                                variant="caption"
-                                color="text.secondary"
-                                component="div"
-                                sx={{ mt: 0.5 }}
-                            >
-                                • Sé creativo y divertido
-                                <br />
-                                • Haz preguntas que generen respuestas interesantes
-                                <br />
-                                • Puede ser seria, graciosa o comprometedora
-                                <br />• Recuerda: ¡es completamente anónima!
-                            </Typography>
-                        </Paper>
-
-                        {/* Campo de pregunta */}
                         <Box>
                             <TextField
                                 {...register('pregunta', {
@@ -120,42 +91,7 @@ Ejemplo: ¿Cuál es tu mayor miedo?"
                             />
                         </Box>
 
-                        {/* Ejemplos */}
-                        <Box>
-                            <Typography
-                                variant="subtitle2"
-                                color="text.secondary"
-                                gutterBottom
-                            >
-                                💡 Ejemplos de preguntas:
-                            </Typography>
-                            <Stack spacing={1}>
-                                {[
-                                    '¿Qué secreto nunca le has contado a nadie?',
-                                    '¿Cuál fue tu momento más vergonzoso?',
-                                    '¿A quién de aquí le tienes envidia y por qué?',
-                                    '¿Cuál es tu mayor arrepentimiento?',
-                                ].map((ejemplo, index) => (
-                                    <Paper
-                                        key={index}
-                                        elevation={0}
-                                        sx={{
-                                            p: 1.5,
-                                            bgcolor: '#f8fafc',
-                                            borderRadius: 1,
-                                            cursor: 'pointer',
-                                            '&:hover': {
-                                                bgcolor: '#f1f5f9',
-                                            },
-                                        }}
-                                    >
-                                        <Typography variant="body2" color="text.secondary">
-                                            {ejemplo}
-                                        </Typography>
-                                    </Paper>
-                                ))}
-                            </Stack>
-                        </Box>
+
 
                         {/* Botón enviar */}
                         <Button

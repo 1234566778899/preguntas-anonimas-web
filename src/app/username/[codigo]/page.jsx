@@ -195,66 +195,6 @@ export default function UsernamePage() {
                     </Button>
                   </Stack>
                 </form>
-
-                {/* Información */}
-                <Stack spacing={1}>
-                  <Paper
-                    elevation={0}
-                    sx={{
-                      p: 2,
-                      bgcolor: '#eff6ff',
-                      borderRadius: 2,
-                      border: '1px solid #bfdbfe',
-                    }}
-                  >
-                    <Typography variant="body2" color="primary.dark">
-                      💡 <strong>Importante:</strong>
-                    </Typography>
-                    <Stack spacing={0.5} sx={{ mt: 1 }}>
-                      <Typography variant="body2" color="text.secondary">
-                        • Tu nombre debe ser único en la sala
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        • Puedes cambiarlo antes de empezar
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        • Tus respuestas serán anónimas durante el juego
-                      </Typography>
-                    </Stack>
-                  </Paper>
-                </Stack>
-
-                {/* Reglas rápidas */}
-                <Box
-                  sx={{
-                    p: 2,
-                    bgcolor: '#f0fdf4',
-                    borderRadius: 2,
-                    border: '1px solid #bbf7d0',
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    fontWeight={600}
-                    color="success.dark"
-                    gutterBottom
-                  >
-                    🎮 ¿Qué va a pasar?
-                  </Typography>
-                  <Typography variant="caption" color="text.secondary">
-                    1. Esperarás a que otros jugadores se unan
-                    <br />
-                    2. El admin iniciará la partida
-                    <br />
-                    3. Harás una pregunta anónima
-                    <br />
-                    4. Responderás las preguntas de todos
-                    <br />
-                    5. Votarás quién escribió cada respuesta
-                    <br />
-                    6. ¡Verás los resultados y ganarás puntos!
-                  </Typography>
-                </Box>
               </Stack>
             </CardContent>
           </Card>
